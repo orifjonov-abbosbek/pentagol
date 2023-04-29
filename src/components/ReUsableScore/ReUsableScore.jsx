@@ -1,26 +1,29 @@
-import React from 'react'
-import "./ReUsableScore.scss"
+import React from "react";
+import "./ReUsableScore.scss";
 
 const ReUsableScore = (props) => {
   return (
     <>
-      <div className="football-score">
-        <div className="team">
-          <img src={props.team1img} alt={props.homeTeam} />
-          <p>{props.team1}</p>
+      <div className="">
+        <div className="football_score">
+          <div className="team">
+            <img src={props.team1img} />
+            <p className="name">{props.team1}</p>
+          </div>
+          <div className="score">
+            <p>
+              {props.team1score} - {props.team2score}
+            </p>
+          </div>
+          <div className="team">
+            <p className="name">{props.team2}</p>
+            <img src={props.team2img} />
+          </div>
         </div>
-        <div className="score">
-          <p>
-            {props.team1score} - {props.team2core}
-          </p>
-        </div>
-        <div className="team">
-          <img src={props.team2} alt={props.awayTeam} />
-          <p>{props.team2img}</p>
-        </div>
+        <div className="data">{props.data}</div>
       </div>
     </>
   );
-}
+};
 
-export default ReUsableScore
+export default ReUsableScore;

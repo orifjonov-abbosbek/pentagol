@@ -1,0 +1,41 @@
+@import "../../base.scss";
+
+.football_score {
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  align-items: center;
+  column-gap: 21px;
+  background: #f4f5f7;
+  border-radius: 10px 10px 10px 0px;
+  .team {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
+
+.data {
+  width: fit-content;
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #333333;
+  border: 1px solid #f4f5f7;
+  padding: 4px 13px 2px 13px;
+}
+.name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #000000;
+}
