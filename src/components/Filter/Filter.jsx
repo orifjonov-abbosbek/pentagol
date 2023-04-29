@@ -38,7 +38,6 @@ const Filter = () => {
             </ul>
           </div>
 
-          <Score />
         </div>
       </section>
     </>
