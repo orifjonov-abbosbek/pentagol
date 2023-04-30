@@ -2,6 +2,9 @@ import React from "react";
 import "./ReUsableScore.scss";
 
 const ReUsableScore = (props) => {
+
+
+  
   return (
     <>
       <div className="reusable_score">
