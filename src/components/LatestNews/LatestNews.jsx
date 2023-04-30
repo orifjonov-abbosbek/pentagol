@@ -2,14 +2,17 @@ import { useContext } from "react";
 import { DataContext } from "../../DataContext/Contect";
 import { Link } from "react-router-dom";
 import ReusableButton from "../ReusableButton/ReusableButton";
-import DisplayNews from "../../pages/displayNews";
+ import ThemeContext from "../../Context/ThemeContext";
 import './LatestNews.scss'
 
 const LatestNews = () => {
+
+
+   const { darkMode, toggleDarkMode } = useContext(ThemeContext);
   const data = useContext(DataContext);
 
   return (
-    <section className="latestNews">
+    <section className={darkMode ? "latestnewsDark" : "latestNews"}>
       <div className="container">
         <div className="latestNews__wrapper">
           <div className="top">

@@ -32,3 +32,33 @@
   }
 }
 
+
+.filterDark {
+
+  background-color: #3f534c;
+  border-radius: 10px;
+
+  .filter__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &_item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      column-gap: 13px;
+      font-style: normal;
+      color: #fff;
+      padding: 14px 16px 14px 13px;
+      cursor: pointer;
+
+      &:active {
+        background: #469264;
+        border-radius: 10px;
+        color: #fff;
+      }
+    }
+  }
+
+}

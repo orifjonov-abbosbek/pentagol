@@ -1,7 +1,10 @@
 @import "../base.scss";
 
 .content {
+  display: flex;
+  justify-content: center;
   padding-top: 40px;
+  column-gap: 20px;
 
   .date {
     font-style: normal;
@@ -32,5 +35,154 @@
     font-size: 30px;
     line-height: 45px;
     color: #000000;
+  }
+
+  .asosiy {
+    width: 415px;
+    background-color: #f4f5f7;
+    padding: 20px 20px 60px 20px;
+    border-radius: 10px;
+
+    h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      color: #000000;
+      margin-bottom: 25px;
+    }
+    .asosiy_list {
+      width: 375px;
+      .asosiy_list_item {
+        h5 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 27px;
+          color: #000000;
+          margin-bottom: 15px;
+        }
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #898989;
+          margin-bottom: 20px;
+        }
+        .line {
+          width: 375px;
+          border: 1px solid #d2d2d2;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .asosiy_section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 170px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.articleDark {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  column-gap: 20px;
+
+  .date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  h2 {
+    width: 1189px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .img {
+    width: 1285px;
+    height: 550px;
+    margin-bottom: 40px;
+  }
+  article {
+    width: 1140px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+  }
+
+  .asosiy {
+    width: 415px;
+    background-color: #222327;
+    padding: 20px 20px 60px 20px;
+    border-radius: 10px;
+
+    h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+    .asosiy_list {
+      width: 375px;
+      .asosiy_list_item {
+        h5 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 27px;
+          color: #fff;
+          margin-bottom: 15px;
+        }
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #898989;
+          margin-bottom: 20px;
+        }
+        .line {
+          width: 375px;
+          border: 1px solid #BCBCBC;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .asosiy_section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 170px;
   }
 }

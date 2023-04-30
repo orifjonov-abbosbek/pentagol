@@ -1,7 +1,9 @@
-import React from "react";
+import {useContext} from "react";
 import "./News.scss";
 import img from "../../assets/for_news1.png";
+import ThemeContext from '../../Context/ThemeContext';
 const News = () => {
+    const { darkMode, toggleDarkMode } = useContext(ThemeContext);
   const data = [
     { teamId: 1, teamName: "Team A", countGames: 10, scores: 30 },
     { teamId: 2, teamName: "Team B", countGames: 12, scores: 28 },
@@ -80,7 +82,7 @@ const News = () => {
               </ul>
             </div>
 
-            <div className="jadval">
+            <div className={darkMode ? 'darkMode-jadval' : 'jadval' }>
               <h2>Jadval</h2>
               <select name="" id="">
                 <option value="Italiya.Aseriya">Italiya. A seriya</option>

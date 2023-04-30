@@ -8,28 +8,33 @@ import LatestNews from "../LatestNews/LatestNews";
 import Footer from "../Footer/Footer";
 import DisplayNews from "../../pages/displayNews";
 import DataContextProvider from "../../DataContext/Contect";
+import { ThemeProvider } from "../../Context/ThemeContext";
 
 const Root = () => {
   return (
     <>
-      <Header />
-      <LastWeeksGames />
-      <UpComingGames />
-      <News />
-      <LatestNews />
-      <Footer />
+      <ThemeProvider>
+        <Header />
+        <LastWeeksGames />
+        <UpComingGames />
+        <News />
+        <LatestNews />
+        <Footer />
+      </ThemeProvider>
     </>
   );
 };
 
 const App = () => {
   return (
-    <DataContextProvider>
-      <Routes>
-        <Route path="/news/:id" element={<DisplayNews />} />
-        <Route path="/" element={<Root />} />
-      </Routes>
-    </DataContextProvider>
+    <ThemeProvider>
+      <DataContextProvider>
+        <Routes>
+          <Route path="/news/:id" element={<DisplayNews />} />
+          <Route path="/" element={<Root />} />
+        </Routes>
+      </DataContextProvider>
+    </ThemeProvider>
   );
 };
 

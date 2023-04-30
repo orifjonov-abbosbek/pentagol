@@ -7,11 +7,7 @@
   box-sizing: border-box;
 }
 
-
 $breakpoint-small: 640px;
-
-
-
 
 a {
   text-align: none;
@@ -27,20 +23,22 @@ ol {
 body {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1755px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+.darkMode {
+  background-color: #16171b;
+  color: #fff;
 
-.darkMode{
 
-
-
-
+  .team_name{
+    background-color: #000;
+    color: #fff;
+  }
 }

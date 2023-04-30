@@ -1,23 +1,20 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Logo from "../../assets/logo.svg";
 import DarkModeIcon from "../../assets/dark_mode.svg";
 import "./Header.scss";
 import "./darkMode.scss";
+import ThemeContext from "../../Context/ThemeContext";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = React.useState(false);
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
-   React.useEffect(() => {
-     if (darkMode) {
-       document.body.classList.add("dark-mode");
-     } else {
-       document.body.classList.remove("dark-mode");
-     }
-   }, [darkMode]);
-
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("darkMode");
+    } else {
+      document.body.classList.remove("darkMode");
+    }
+  }, [darkMode]);
 
   return (
     <>
