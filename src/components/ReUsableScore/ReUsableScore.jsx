@@ -4,7 +4,7 @@ import "./ReUsableScore.scss";
 const ReUsableScore = (props) => {
   return (
     <>
-      <div className="">
+      <div className="reusable_score">
         <div className="football_score">
           <div className="team">
             <img src={props.team1img} />
