@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { DataContext } from "../../DataContext/Contect";
 import { Link } from "react-router-dom";
 import ReusableButton from "../ReusableButton/ReusableButton";
+import DisplayNews from "../../pages/displayNews";
 import './LatestNews.scss'
 
 const LatestNews = () => {
@@ -19,7 +20,10 @@ const LatestNews = () => {
             <ul className="latestNews_list">
               {data.map((item, index) => (
                 <li className="listItem" key={index}>
-                  <Link style={{ textDecoration: "none" }} to={item.newsUrl}>
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    to={`/news/${index}`}
+                  >
                     <img className="newsImg" src={item.newsImg} alt="" />
                     <h3>{item.newsTitle}</h3>
                     <p>{item.newsDesc}</p>

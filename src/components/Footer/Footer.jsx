@@ -105,13 +105,19 @@ const Footer = () => {
             </div>
 
             <div className="footer_social_links">
+              <div className="first">
+
               <img src={twitter} alt="" />
               <img src={yt} alt="" />
               <img src={vk} alt="" />
+              </div>
+              <div className="second">
+
               <img src={skype} alt="" />
               <img src={insta} alt="" />
               <img src={fb} alt="" />
               <img src={tg} alt="" />
+              </div>
             </div>
           </div>
           <div className="line"></div>

@@ -18,7 +18,6 @@
     line-height: 33px;
     text-align: center;
     color: #ffffff;
-
   }
 }
 .footer__wrapper {
@@ -55,12 +54,20 @@
   }
   .footer_social_links {
     width: 330px;
-
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    column-gap: 30px;
-    row-gap: 30px;
-    text-align: right;
+    
+    align-items: end;
+    .first {
+      display: flex;
+      column-gap: 30px;
+      margin-left: 90px;
+    
+   
+    }
+    .second{
+      display: flex;
+      column-gap: 30px;
+    }
   }
 }

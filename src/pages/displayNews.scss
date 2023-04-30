@@ -1,1 +1,36 @@
 @import "../base.scss";
+
+.content {
+  padding-top: 40px;
+
+  .date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  h2 {
+    width: 1189px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .img {
+    width: 1285px;
+    height: 550px;
+    margin-bottom: 40px;
+  }
+  article {
+    width: 1140px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+  }
+}
