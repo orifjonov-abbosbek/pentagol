@@ -9,12 +9,23 @@ const Header = () => {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
   useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+
     if (darkMode) {
       document.body.classList.add("darkMode");
     } else {
       document.body.classList.remove("darkMode");
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    const darkModeValue = JSON.parse(localStorage.getItem("darkMode"));
+
+
+    if (darkModeValue !== null) {
+      toggleDarkMode(darkModeValue);
+    }
+  }, []);
 
   return (
     <>
