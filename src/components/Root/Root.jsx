@@ -6,6 +6,7 @@ import UpComingGames from "../upComingGames/UpComingGames";
 import News from "../News/News";
 import LatestNews from "../LatestNews/LatestNews";
 import Footer from "../Footer/Footer";
+import AllNews from "../AllNews/AllNews";
 import DisplayNews from "../../pages/displayNews";
 import DataContextProvider from "../../DataContext/Contect";
 import { ThemeProvider } from "../../Context/ThemeContext";
@@ -19,6 +20,7 @@ const Root = () => {
         <UpComingGames />
         <News />
         <LatestNews />
+        <AllNews />
         <Footer />
       </ThemeProvider>
     </>

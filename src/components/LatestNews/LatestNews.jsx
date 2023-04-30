@@ -12,7 +12,7 @@ const LatestNews = () => {
   const data = useContext(DataContext);
 
   return (
-    <section className={darkMode ? "latestnewsDark" : "latestNews"}>
+    <section className={ darkMode ? 'latestnewsDark' : 'latestNews'}>
       <div className="container">
         <div className="latestNews__wrapper">
           <div className="top">

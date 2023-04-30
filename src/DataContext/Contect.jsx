@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import latest1 from "../assets/latest1.png";
 import stadion2 from "../assets/stadion2.png";
+import latest3 from "../assets/latest3.png";
 
 export const DataContext = createContext();
 
@@ -8,6 +9,7 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
     newsTitle:
       "Faqatgina muvaffaqiyatli qur'a Rossiyani Jahon chempionatiga olib boradi: bo'g'inlar oldidagi barcha maketlar",
     newsDesc:
@@ -18,6 +20,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -28,6 +32,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -38,6 +44,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -48,6 +56,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -58,6 +68,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -68,6 +80,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -78,6 +92,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -88,6 +104,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -98,6 +116,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -108,6 +128,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -118,6 +140,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -128,6 +152,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -138,6 +164,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -148,6 +176,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -158,6 +188,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -168,6 +200,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -178,6 +212,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -188,6 +224,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
@@ -198,6 +236,8 @@ const data = [
   {
     newsImg: latest1,
     newsImg2: stadion2,
+    newsImg3: latest3,
+
     newsTitle:
       'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
     newsDesc:
