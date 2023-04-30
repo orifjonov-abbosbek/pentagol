@@ -1,181 +1,39 @@
-import React from "react";
-import latest1 from "../../assets/latest1.png";
-import "./LatestNews.scss";
+import { useContext } from "react";
+import { DataContext } from "../../DataContext/Contect";
+import { Link } from "react-router-dom";
+import ReusableButton from "../ReusableButton/ReusableButton";
+import './LatestNews.scss'
 
 const LatestNews = () => {
-  const data = [
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
+  const data = useContext(DataContext);
 
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-    {
-      newsImg: latest1,
-      newsTitle:
-        'Zidan "Manchester Yunayted"ga Premer-ligaga tayyor emasligini aytdi',
-      newsDesc:
-        'Zidan "Manchester Yunayted" ga Premer-ligaga tayyor emasligini aytdi ',
-
-      newsDate: "12.05.2021  12:54",
-    },
-  ];
   return (
-    <>
-      <section className="latestNews">
-        <div className="container">
-          <div className="latestNews__wrapper">
-            <div className="top">
-              <h2>So'ngi yangiliklar</h2>
-            </div>
+    <section className="latestNews">
+      <div className="container">
+        <div className="latestNews__wrapper">
+          <div className="top">
+            <h2>So'ngi yangiliklar</h2>
+          </div>
 
-            <div className="contents">
-              <ul className="latestNews_list">
-                {data.map((item) => (
-                  <li className="listItem">
+          <div className="contents">
+            <ul className="latestNews_list">
+              {data.map((item, index) => (
+                <li className="listItem" key={index}>
+                  <Link style={{ textDecoration: "none" }} to={item.newsUrl}>
                     <img className="newsImg" src={item.newsImg} alt="" />
                     <h3>{item.newsTitle}</h3>
                     <p>{item.newsDesc}</p>
                     <p className="date">{item.newsDate}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <button className="loadMore">Barchasi ko’rish</button>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
+          <ReusableButton label="Barchasi ko’rish" />
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

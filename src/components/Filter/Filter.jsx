@@ -4,7 +4,6 @@ import PremierL from "../../assets/premier.svg";
 import LaLiga from "../../assets/laliga.svg";
 import Bundes from "../../assets/bundes.svg";
 import Liga1 from "../../assets/liga1.svg";
-import Score from "../Score/Score";
 import "./Filter.scss";
 
 const Filter = () => {
